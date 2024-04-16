@@ -13,7 +13,8 @@ if (BUILD_TESTING)
     set(SOURCES
         "../src/solution.h"
         "../src/solution.cpp"
-        "hashfunc_test.cpp")
+        "hashfunc_test.cpp"
+        "hashtable_test.cpp")
 
     add_executable(${test_solution} ${SOURCES})
 

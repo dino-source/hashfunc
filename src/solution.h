@@ -17,7 +17,7 @@ public:
         return hash;
     }
 
-    template <typename Key = std::string_view, typename Val = int>
+    template <typename Key, typename Val>
     class HashTable {
     public:
         HashTable() {
