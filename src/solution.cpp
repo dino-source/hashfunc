@@ -1,7 +1,11 @@
 #include "solution.h"
 
-int Solution::hashfunc() {
-    int result {};
-    //tbd
-    return result;
+
+std::size_t Solution::hashfunc(std::string_view s) {
+    std::size_t hash {s.size()};
+    for (std::size_t factor {2}; char ch : s) {
+        hash += ch * factor++;
+    }
+
+    return hash;
 }

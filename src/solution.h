@@ -1,12 +1,12 @@
 #ifndef DINO_SOURCE_HASHFUNC_H
 #define DINO_SOURCE_HASHFUNC_H
 
-#include <vector>
+#include <cstddef>
+#include <string_view>
 
 
 class Solution {
 public:
-    int hashfunc();
-};
+    std::size_t hashfunc(std::string_view s); };
 
 #endif // DINO_SOURCE_HASHFUNC_H
