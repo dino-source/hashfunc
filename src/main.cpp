@@ -1,5 +1,7 @@
-#include "solution.h"
+// #include "solution.h"
+
+#include <iostream>
 
 int main() {
-    // TODO: put some code here
+    std::cout << "Main function says: \"TODO: put your code here\"\n";
 }
